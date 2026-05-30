@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-compressiondp
-  nameSpace: prod
+  namespace: prod
   annotations:
     kubernetes.io/change-cause: "Deploy to compression"
 spec:
