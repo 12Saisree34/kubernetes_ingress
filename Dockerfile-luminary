@@ -1,0 +1,2 @@
+From nginx
+ADD templatemo_621_luminary /usr/share/nginx/html

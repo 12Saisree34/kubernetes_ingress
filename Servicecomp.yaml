@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mycompingress
+  namespace: prod
+spec: 
+  type: clusterIP
+  selector: 
+    app: compression-app
+  ports:
+    - port: 80
