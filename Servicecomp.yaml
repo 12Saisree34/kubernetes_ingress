@@ -4,7 +4,7 @@ metadata:
   name: mycompingress
   namespace: prod
 spec: 
-  type: clusterIP
+  type: ClusterIP
   selector: 
     app: compression-app
   ports:

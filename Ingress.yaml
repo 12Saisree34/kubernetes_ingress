@@ -1,14 +1,14 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata: 
-  name: my-ingress
+  name: myIngress
   namespace: prod
 spec:
   rules:
     - http:
         paths:
           - path: /luminary
-            pathType: prefix
+            pathType: Prefix
             backend:
               service:
                 name: luminary-ingress

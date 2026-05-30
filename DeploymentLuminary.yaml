@@ -4,7 +4,7 @@ metadata:
   name: my-luminarydp
   namespace: prod
   annotations:
-    kubernetes.io/change-cause:"Deploy to luminary"
+    kubernetes.io/change-cause: "Deploy to luminary"
 spec:
   minReadySeconds: 5
   replicas: 5

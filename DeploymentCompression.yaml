@@ -2,9 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-compressiondp
-  namespace: prod
+  nameSpace: prod
   annotations:
-    kubernetes.io/change-cause:"Deploy to compression"
+    kubernetes.io/change-cause: "Deploy to compression"
 spec:
   minReadySeconds: 5
   replicas: 5

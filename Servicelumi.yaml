@@ -4,7 +4,7 @@ metadata:
   name: mylumiingress
   namespace: prod
 spec:
-  type: clusterIP
+  type: ClusterIP
   selector: 
     app: luminary-app
   ports: 
