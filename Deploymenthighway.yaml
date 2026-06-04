@@ -24,7 +24,7 @@ spec:
     spec: 
       containers: 
         - name: highway-container
-          image: nginx
+          image: 757372703178.dkr.ecr.ap-south-1.amazonaws.com/dev/images:highway
           ports:
             - containerPort: 80
           imagePullPolicy: Always

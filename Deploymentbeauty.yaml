@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: beauty-containers
-          image: nginx
+          image: 757372703178.dkr.ecr.ap-south-1.amazonaws.com/dev/images:beauty
           ports:
             - containerPort: 80
           imagePullPolicy: Always
