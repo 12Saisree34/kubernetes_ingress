@@ -4,7 +4,7 @@ metadata:
   name: my-beautydp
   namespace: prod
   annotations:
-    kubernetes.io/change-cause:"Deploy to beauty"
+    kubernetes.io/change-cause: "Deploy to beauty"
 spec:
   minReadySeconds: 5
   replicas: 5

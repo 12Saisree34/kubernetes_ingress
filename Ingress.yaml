@@ -12,6 +12,8 @@ spec:
             backend:
               service:
                 name: beauty-ingress
+                port:
+                  number: 80
                 
     - http:
         paths:
@@ -20,5 +22,7 @@ spec:
             backend:
               service:
                 name: highway-ingress
+                port:
+                  number: 80
                 
 
