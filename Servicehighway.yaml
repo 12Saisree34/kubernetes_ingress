@@ -4,7 +4,7 @@ metadata:
   name: myhighwayingress
   namespace: prod
 spec: 
-  type: clusterIP
+  type: ClusterIP
   selector: 
     app: highway-app
   ports:

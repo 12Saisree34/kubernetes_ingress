@@ -8,7 +8,7 @@ spec:
     - http:
         paths:
           - path: /beauty
-            pathType: prefix
+            pathType: Prefix
             backend:
               service:
                 name: beauty-ingress
@@ -16,7 +16,7 @@ spec:
     - http:
         paths:
           - path: /highway
-            pathType: prefix
+            pathType: Prefix
             backend:
               service:
                 name: highway-ingress
