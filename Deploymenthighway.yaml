@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-compressiondp
+  name: my-highwaydp
   namespace: prod
   annotations:
-    kubernetes.io/change-cause: "Deploy to compression"
+    kubernetes.io/change-cause:"Deploy to highway"
 spec:
   minReadySeconds: 5
   replicas: 5
   selector:
     matchLabels:
-      app: compression-app
+      app: highway-app
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -18,12 +18,12 @@ spec:
       maxUnavailable: 25
   template: 
     metadata: 
-      name: compressionpods
+      name: highwaypods
       labels: 
-        app: compression-app
+        app: highway-app
     spec: 
       containers: 
-        - name: compression-container
+        - name: highway-container
           image: nginx
           ports:
             - containerPort: 80

@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-luminarydp
+  name: my-beautydp
   namespace: prod
   annotations:
-    kubernetes.io/change-cause: "Deploy to luminary"
+    kubernetes.io/change-cause:"Deploy to beauty"
 spec:
   minReadySeconds: 5
   replicas: 5
   selector:
     matchLabels:
-      app: luminary-app
+      app: beauty-app
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -19,10 +19,10 @@ spec:
   template:
     metadata: 
       labels: 
-        app: luminary-app 
+        app: beauty-app 
     spec:
       containers:
-        - name: luminary-containers
+        - name: beauty-containers
           image: nginx
           ports:
             - containerPort: 80

@@ -1,27 +1,24 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata: 
-  name: my.ingress
+  name: my-ingress
   namespace: prod
 spec:
   rules:
     - http:
         paths:
-          - path: /luminary
-            pathType: Prefix
+          - path: /beauty
+            pathType: prefix
             backend:
               service:
-                name: luminary-ingress
-                port:
-                  number: 80
+                name: beauty-ingress
                 
     - http:
         paths:
-          - path: /compression
-            pathType: Prefix
+          - path: /highway
+            pathType: prefix
             backend:
               service:
-                name: compression-ingress
-                port: 
-                  number: 80
+                name: highway-ingress
                 
+

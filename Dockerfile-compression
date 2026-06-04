@@ -1,2 +1,0 @@
-FROM nginx
-ADD templatemo_620_compression /usr/share/nginx/html
